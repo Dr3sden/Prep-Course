@@ -73,13 +73,7 @@ function tienenMismaLongitud(str1, str2) {
   // De lo contrario, devuelve "false"
   // Tu código:
 
-  if(str1.length === str2.lenght){
-    return true;
-  }
-  else{
-    return false;
-  }
-  
+  return str1.length === str2.lenght;
 }
 
 function menosQueNoventa(num) {
@@ -181,7 +175,7 @@ function esPositivo(numero) {
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
   if(numero > 0){
-    var positivo = "es positivo";
+    var positivo = "Es positivo";
     return positivo;
   }
   else if(numero===0){
