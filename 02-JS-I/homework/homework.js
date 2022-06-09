@@ -73,7 +73,12 @@ function tienenMismaLongitud(str1, str2) {
   // De lo contrario, devuelve "false"
   // Tu código:
 
-  return str1.length === str2.lenght;
+  if(str1.length === str2.lenght){
+    return true;
+  }
+  else{
+    return false;
+  }
   
 }
 
@@ -124,7 +129,7 @@ function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
-  if((num%2)!==1){
+  if((num%2)!==0){
     return true;
   }
   else{
@@ -178,13 +183,12 @@ function esPositivo(numero) {
   if(numero > 0){
     var positivo = "es positivo";
     return positivo;
-
   }
   else if(numero===0){
-    var negativo ="es negativo";
+    return false;
   }
   else{
-    return false;
+    return "Es negativo";
   }
 }
 
@@ -192,7 +196,8 @@ function agregarSimboloExclamacion(str) {
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
   // Ejemplo: "hello world" pasaría a ser "hello world!"
   // Tu código:
-  return str + "!";
+  var consigno = str + "!";
+  return consigno;
 }
 
 function combinarNombres(nombre, apellido) {
