@@ -196,19 +196,19 @@ function mesesDelAño(array) {
       meses.push(array[i]);
     }
   }
-  for(var i=0; i<meses.length; i++){
+  /*for(var i=0; i<meses.length; i++){
     if(meses[i]!= "Enero" || meses[i]!= "Marzo" || meses[i]!= "Noviembre" ){
       return "No se encontraron los meses pedidos"
     }
   }
-  return meses;
+  return meses;*/
 
-  /*if(meses.length<3){
+  if(meses.length<3){
     return "No se encontraron los meses pedidos"
   }
-  else{/
+  else{
   return meses;
-  }*/
+  }
 }
 
 
