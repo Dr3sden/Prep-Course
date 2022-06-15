@@ -37,7 +37,8 @@ function agregarItemAlFinalDelArray(array, elemento) {
   // Añade el "elemento" al final del array
   // y devuelve el array
   // Tu código:
-  return array.push(elemento);
+  array.push(elemento);
+  return array;
 }
 
 
@@ -46,7 +47,8 @@ function agregarItemAlComienzoDelArray(array, elemento) {
   // y devuelve el array
   // Pista: usa el método `.unshift`
   // Tu código:
-  return array.unshift(elemento);
+  array.unshift(elemento);
+  return array;
 }
 
 
@@ -56,7 +58,7 @@ function dePalabrasAFrase(palabras) {
   // con espacios entre cada palabra
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
-  palabras.join(" ");
+  return palabras.join(" ");
   /*var cadena;
   for(var i=0; i<palabras.lenght; i++){
     cadena = cadena + palabras[i];
@@ -150,12 +152,12 @@ function diaDeLaSemana(numeroDeDia) {
   //Realiza una función que dado el número del día de la semana, retorne: Es fin de semana
   //si el día corresponde a Sábado o Domingo y “Es dia Laboral” en caso contrario. 
   //Escribe tu código aquí
-  if(numeroDeDia===1 || numeroDeDia===7){
+  if(numeroDeDia === 1 || numeroDeDia === 7){
     return "Es fin de semana";
   }
   
   return "Es dia laboral";
-} 
+}
 
 
 function empiezaConNueve(n) {
@@ -167,7 +169,6 @@ function empiezaConNueve(n) {
     return true;
   }
   return false;
-  
 }
 
 
@@ -264,7 +265,7 @@ function continueStatement(numero) {
       array.push(suma);
     }
   }
-  return suma;
+  return array;
 }
 
 
