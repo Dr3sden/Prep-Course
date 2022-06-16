@@ -21,7 +21,7 @@ function agregarPropiedad (objeto, property) {
   // Devuelve el objeto
   // NOTA: El nombre de la propiedad no es "propiedad", el nombre es el valor del argumento llamado "property" (una cadena/string)
   // Tu código:
-  objeto.property = null;
+  objeto[property] = null;
   return agregarPropiedad;
 }
 
@@ -83,7 +83,21 @@ function tienePropiedad (objeto, propiedad) {
   // "propiedad" es un string
   // De lo contrario, devuelve "false"
   // Tu código:
-  if(objeto.propiedad){
+  /*if(objeto.propiedad){
+    return true;
+  }
+  else{
+    return false;
+  }*/
+  /*for(let propiedad in objeto){
+    if(objeto.propiedad){
+      return true;
+    }
+    else{
+      return false;
+    }
+  }*/
+  if(objeto[propiedad]){
     return true;
   }
   else{
