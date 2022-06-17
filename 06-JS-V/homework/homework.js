@@ -40,10 +40,11 @@ function agregarStringInvertida() {
   String.prototype.reverse = function(){
     var invertida = "";
     for(var i= this.length-1; i>=0; i--){
-      invertida = invertida + this.charAt[i]; 
+      invertida = invertida + this.charAt[i];
     }
+    return invertida;
   }
-  return invertida;
+
 }
 
 // ---------------------------------------------------------------------------//
@@ -66,7 +67,12 @@ function agregarStringInvertida() {
       this.domicilio = domicilio
     }
     detalle = function(){
-      return this;
+      return {
+        Nombre: this.nombre,
+        Apellido: this.apellido,
+        Edad: this.edad,
+        Domicilio: this.domicilio
+      };
     }
 }
 
