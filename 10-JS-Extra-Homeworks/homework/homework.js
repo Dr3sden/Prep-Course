@@ -40,11 +40,6 @@ function numberOfCharacters(string) {
       suma++;
       veces [string.charAt(i)] = suma;
       contador++;
-
-    }
-    if(contador===string.length-1){
-      i=0;
-      return;
     }
   }
   return veces;
