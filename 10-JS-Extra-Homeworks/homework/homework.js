@@ -20,21 +20,18 @@ function numberOfCharacters(string) {
   //en formato par clave-valor.
   //Ej: Recibe ---> "adsjfdsfsfjsdjfhacabcsbajda" || Devuelve ---> { a: 5, b: 2, c: 2, d: 4, f: 4, h:1, j: 4, s: 5 } 
   //Escribe tu código aquí
-  var suma =0;
-  var contador = 0;
-  for(var i=0; i<string.length-1; i++){
-    var letra = string.charAt(i);
+  const veces = {
+    letra: frec
+  };
+  var suma=0;
+  for(var i=0; i<string.length; i++){
     if(string.charAt(i)===string.charAt(i+1)){
       suma++;
+      veces.letra = string.charAt(i);
+      veces.frec = suma;
     }
-    contador++;
-    if(contador===string.length-1){
-      suma=0;
-      return {letra: suma};
-    }
-    
+    return veces;
   }
-
 }
 
 
