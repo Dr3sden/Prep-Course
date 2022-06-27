@@ -25,12 +25,14 @@ function numberOfCharacters(string) {
   var contador=0;
   var array = Array.from(string);
   for(var i =0; i<array.length; i++){
-    if(array[i]===array[i+1]){
-      suma++;
-      contador;
-      veces[array[i]]=suma;
+    for(var j=1; j<array.length; j++){
+      if(array[i]===array[j]){
+        suma++;
+        contador;
+        veces[array[i]]=suma;
       //array.splice(i,1);
       //array.splice(i+1,1);
+      }
     }
   }
   return veces;
@@ -52,6 +54,7 @@ function capToFront(s) {
   //al principio de la palabra.
   //Ejemplo: soyHENRY -> HENRYsoy
   //Escribe tu código aquí
+
 }
 
 
