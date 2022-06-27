@@ -40,6 +40,7 @@ function capToFront(s) {
   //al principio de la palabra.
   //Ejemplo: soyHENRY -> HENRYsoy
   //Escribe tu código aquí
+  
 
 
 }
@@ -83,6 +84,14 @@ function deleteAbc(cadena){
   //Define una función que elimine las letras "a", "b" y "c" de la cadena dada 
   //y devuelva la versión modificada o la misma cadena, en caso de contener dichas letras.
   //Escribe tu código aquí
+  var array = Array.from(cadena);
+  var sinletras = [];
+  for(var i=0; i<array.length; i++){
+    if(array[i]==="a" || array[i]==="b"|| array[i]==="c"){
+      sinletras = array.slice(i,1);
+    }
+  }
+  return sinletras.toString();
 }
 
 
