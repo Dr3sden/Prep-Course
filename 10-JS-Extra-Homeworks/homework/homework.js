@@ -28,31 +28,19 @@ function numberOfCharacters(string) {
       if(array[i]===array[j]){
         suma++;
         veces[array[i]]=suma;
-      //array.splice(i,1);
-      //array.splice(i+1,1);
       }
     }
     suma=0;
   }
   return veces;
-  
-  /*for(var i=0; i<string.length; i++){
-    if(string.charAt(i)===string.charAt(i+1)){
-      suma++;
-      veces [string.charAt(i)] = suma;
-      contador++;
-    }
-  }
-  return veces;*/
-
 }
-
 
 function capToFront(s) {
   //Realiza una función que reciba como parámetro un string y mueva todas las letras mayúsculas
   //al principio de la palabra.
   //Ejemplo: soyHENRY -> HENRYsoy
   //Escribe tu código aquí
+
 
 }
 
@@ -71,6 +59,21 @@ function capicua(numero){
   //La misma debe retornar: "Es capicua" si el número se número que se lee igual de 
   //izquierda a derecha que de derecha a izquierda. Caso contrario retorna "No es capicua"
   //Escribe tu código aquí
+  //var num1 = numero.toString();
+  var num2 = numero.toString();
+  var array = Array.from(num2);
+  //var numIni = Array.from(num1);
+  var array2 = [];
+
+  for(i=array.length-1; i>=0; i--){
+    array2.push(array[i]);
+  }
+  if(array === array2){
+    return "Es capicua";
+  }
+  else{
+    return "No es capicua";
+  }
 }
 
 
