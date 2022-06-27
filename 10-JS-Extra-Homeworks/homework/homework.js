@@ -29,8 +29,8 @@ function numberOfCharacters(string) {
       suma++;
       contador;
       veces.array[i]=suma;
-      array.splice(i,1);
-      array.splice(i+1,1);
+      //array.splice(i,1);
+      //array.splice(i+1,1);
     }
   }
   
