@@ -33,6 +33,7 @@ function numberOfCharacters(string) {
       //array.splice(i+1,1);
     }
   }
+  return veces;
   
   /*for(var i=0; i<string.length; i++){
     if(string.charAt(i)===string.charAt(i+1)){
