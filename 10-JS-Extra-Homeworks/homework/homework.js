@@ -65,8 +65,8 @@ function capicua(numero){
   //var numIni = Array.from(num1);
   var array2 = [];
 
-  for(i=array.length-1; i>=0; i--){
-    array2.push(array[i]);
+  for(i=0; i<array.length; i++){
+    array2.unshift(array[i]);
   }
   if(array === array2){
     return "Es capicua";
