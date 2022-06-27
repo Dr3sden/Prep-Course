@@ -22,13 +22,11 @@ function numberOfCharacters(string) {
   //Escribe tu código aquí
   const veces = {};
   var suma=0;
-  var contador=0;
   var array = Array.from(string);
   for(var i =0; i<array.length; i++){
-    for(var j=0; j<array.length; j++){
-      if(array[i]===array[j+1]){
+    for(var j=1; j===array.length-1; j++){
+      if(array[i]===array[j]){
         suma++;
-        contador;
         veces[array[i]]=suma;
       //array.splice(i,1);
       //array.splice(i+1,1);
