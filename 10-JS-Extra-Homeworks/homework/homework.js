@@ -95,15 +95,16 @@ function deleteAbc(cadena){
       sinletras.push(array[i]);
     }
   }
-  for(var i=0; i<sinletras.length; i++){
-    if(sinletras[i]===","){
+  var f = sinletras.toString()
+  for(var i=0; i<f.length; i++){
+    if(f.charAt(i)===","){
       continue;
     }
     else{
       final.concat(sinletras[i]);
     }
-    return final;
   }
+  return final;
   /*var f = sinletras.toString();
 
   for(var i=0; i<f.length; i++){
