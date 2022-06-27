@@ -25,8 +25,8 @@ function numberOfCharacters(string) {
   var contador=0;
   var array = Array.from(string);
   for(var i =0; i<array.length; i++){
-    for(var j=1; j<array.length; j++){
-      if(array[i]===array[j]){
+    for(var j=0; j<array.length; j++){
+      if(array[i]===array[j+1]){
         suma++;
         contador;
         veces[array[i]]=suma;
