@@ -95,9 +95,8 @@ function deleteAbc(cadena){
       sinletras.push(array[i]);
     }
   }
-  var f = sinletras.toString()
-  for(var i=0; i<f.length; i++){
-    if(f.charAt(i)===","){
+  for(var i=0; i<sinletras.length; i++){
+    if(sinletras[i]===","){
       continue;
     }
     else{
