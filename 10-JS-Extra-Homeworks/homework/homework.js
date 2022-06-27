@@ -88,7 +88,7 @@ function deleteAbc(cadena){
   var sinletras = [];
   for(var i=0; i<array.length; i++){
     if(array[i]!=="a" || !array[i]!=="b"|| !array[i]!=="c"){
-      sinletras.unshift(array[i]);
+      sinletras.push(array[i]);
     }
   }
   var f = sinletras.toString();
