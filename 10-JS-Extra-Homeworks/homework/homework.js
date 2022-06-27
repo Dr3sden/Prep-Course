@@ -28,7 +28,7 @@ function numberOfCharacters(string) {
     if(array[i]===array[i+1]){
       suma++;
       contador;
-      veces.array[i]=suma;
+      veces[array[i]]=suma;
       //array.splice(i,1);
       //array.splice(i+1,1);
     }
