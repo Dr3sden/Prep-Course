@@ -99,25 +99,6 @@ function deleteAbc(cadena){
     final = final.concat(sinletras[i]);
   }
   return final;
-  //FALTA ELIMINAR LAS COMAS
-
-  /*for(var i=0; i<sinletras.length; i++){
-    if(sinletras[i]===","){
-      continue;
-    }
-    else{
-      final.concat(sinletras[i]);
-    }
-  }
-  return final;
-  var f = sinletras.toString();
-
-  for(var i=0; i<f.length; i++){
-    if(f.charAt(i)!==","){
-      final.concat(f.charAt(i));
-    }
-  }
-    return final;*/
 }
 
 
