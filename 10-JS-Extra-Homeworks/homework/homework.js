@@ -95,7 +95,13 @@ function deleteAbc(cadena){
     }
   }
   var f = sinletras.toString();
-  return f;
+  var final = "";
+  for(var i=0; i<f.length; i++){
+    if(f.charAt(i)!==","){
+      final.concat(f.charAt(i));
+    }
+  }
+    return final;
 }
 
 
