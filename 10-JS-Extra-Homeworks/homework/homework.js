@@ -96,7 +96,7 @@ function deleteAbc(cadena){
     }
   }
   for(var i=0; i<sinletras.length; i++){
-    final.concat(sinletras[i]);
+    final = final.concat(sinletras[i]);
   }
   return final;
   //FALTA ELIMINAR LAS COMAS
