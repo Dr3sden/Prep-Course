@@ -86,6 +86,7 @@ function deleteAbc(cadena){
   //Escribe tu código aquí
   var array = Array.from(cadena);
   var sinletras = [];
+  var final = "";
   for(var i=0; i<array.length; i++){
     if(array[i]==="a" || array[i]==="b"|| array[i]==="c"){
       continue;
@@ -94,14 +95,23 @@ function deleteAbc(cadena){
       sinletras.push(array[i]);
     }
   }
-  var f = sinletras.toString();
-  var final = "";
+  for(var i=0; i<sinletras.length; i++){
+    if(sinletras[i]===","){
+      continue;
+    }
+    else{
+      final.concat(sinletras[i]);
+    }
+    return final;
+  }
+  /*var f = sinletras.toString();
+
   for(var i=0; i<f.length; i++){
     if(f.charAt(i)!==","){
       final.concat(f.charAt(i));
     }
   }
-    return final;
+    return final;*/
 }
 
 
