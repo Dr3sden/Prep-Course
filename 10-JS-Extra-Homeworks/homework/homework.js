@@ -91,7 +91,8 @@ function deleteAbc(cadena){
       sinletras = array.slice(i,1);
     }
   }
-  return sinletras.toString();
+  var f = sinletras.toString();
+  return f;
 }
 
 
