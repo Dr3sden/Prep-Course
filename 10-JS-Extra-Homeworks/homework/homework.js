@@ -68,7 +68,9 @@ function capicua(numero){
   for(i=0; i<array.length; i++){
     array2.unshift(array[i]);
   }
-  if(array.equals(array2)){
+  var a = array.toString();
+  var b = array2.toString();
+  if(a===b){
     return "Es capicua";
   }
   else{
