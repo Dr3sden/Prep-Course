@@ -34,6 +34,7 @@ function numberOfCharacters(string) {
       //array.splice(i+1,1);
       }
     }
+    suma=0;
   }
   return veces;
   
