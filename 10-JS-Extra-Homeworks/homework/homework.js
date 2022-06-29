@@ -64,12 +64,12 @@ function asAmirror(str) {
   var separada = str.split("")
   var invertir = separada.reverse();
   //var aux = invertir.reverse();
-  var aux = [];
-  for(var i=invertir.length; i>=0; i--){
-    aux.push(invertir[i]);
+  var unir = invertir.join("");
+  var aux = "";
+  for(var i=unir.length-1; i>=0; i--){
+    aux = aux + unir.charAt(i);
   }
-  var unir = aux.join("");
-  return invertir;
+  return aux;
   //return str.split("").reverse().join("");
 } 
 
