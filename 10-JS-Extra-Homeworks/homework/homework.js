@@ -61,10 +61,10 @@ function asAmirror(str) {
   //pero con cada una de sus palabras invertidas, como si fuera un espejo.
   //Ej: Recibe ---> "The Henry Challenge is close!" || Devuelve ---> "ehT yrneH egnellahC si !esolc"
   //Escribe tu código aquí
-  var separada = str.split("")
+  /*var separada = str.split("")
   var invertir = separada.reverse();
-  var unir = invertir.join("");
-  return unir;
+  var unir = invertir.join("");*/
+  return str.split("").reverse().join("");
 } 
 
 
