@@ -107,15 +107,19 @@ function sortArray(arr) {
   //Ej: Recibe ---> ["You", "are", "beautiful", "looking"] || Devuelve ---> [“You", "are", "looking", "beautiful"]
   //Escribe tu código aquí
   var arraux = [];
+  var arraux2 = [];
   for(var i=0; i<arr.length; i++){
-    for(var j=1; j<arr.length; j++){
-      if(arr[i].length<arr[j].length){
-        arraux.push(arr[i]);
+    arraux.push(arr[i].length);
+  }
+  arraux.sort(function (a,b){return a-b});
+  for(var i=0; i<arr.length; i++){
+    for(var j=0; j<arraux.length; j++){
+      if(arraux[j]===arr[i].length){
+        arraux2.push(arr[i]);
       }
     }
   }
-  return arraux;
-  
+  return arraux2;
 }
 
 
