@@ -112,9 +112,6 @@ function sortArray(arr) {
       if(arr[i].length<arr[j].length){
         arraux.unshift(arr[i]);
       }
-      else{
-        arraux.push(arr[j]);
-      }
     }
   }
   return arraux;
