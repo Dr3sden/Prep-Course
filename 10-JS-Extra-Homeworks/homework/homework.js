@@ -69,7 +69,7 @@ function asAmirror(str) {
     aux.push(invertir[i]);
   }
   var unir = aux.join("");
-  return unir;
+  return invertir;
   //return str.split("").reverse().join("");
 } 
 
