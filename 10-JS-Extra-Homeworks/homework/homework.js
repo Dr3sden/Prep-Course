@@ -128,7 +128,9 @@ function sortArray(arr) {
       if(cantidades[j]===arr[i].length){
         array1.push(arr[i]);
       }
-      continue;
+      else{
+        continue;
+      }
     }
   }
   return array1;
