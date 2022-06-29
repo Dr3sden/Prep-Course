@@ -40,9 +40,18 @@ function capToFront(s) {
   //al principio de la palabra.
   //Ejemplo: soyHENRY -> HENRYsoy
   //Escribe tu código aquí
-  
-
-
+  var cambiada="";
+  for(var i=0; i<s.length;i++){
+    if(s.charAt(i).toUpperCase()===s.charAt(i)){
+      cambiada = cambiada.concat(s.charAt(i))
+    }
+  }
+  for(var i=0; i<s.length;i++){
+    if(s.charAt(i).toLowerCase()===s.charAt(i)){
+      cambiada = cambiada.concat(s.charAt(i))
+    }
+  }
+  return cambiada;
 }
 
 
@@ -106,6 +115,8 @@ function sortArray(arr) {
   //La función recibe una matriz de strings. Ordena la matriz en orden creciente de longitudes de cadena
   //Ej: Recibe ---> ["You", "are", "beautiful", "looking"] || Devuelve ---> [“You", "are", "looking", "beautiful"]
   //Escribe tu código aquí
+
+  //MALO
   var arraux = [];
   var arraux2 = [];
   for(var i=0; i<arr.length; i++){
