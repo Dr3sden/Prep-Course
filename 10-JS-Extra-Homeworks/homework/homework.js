@@ -116,12 +116,15 @@ function sortArray(arr) {
   //Ej: Recibe ---> ["You", "are", "beautiful", "looking"] || Devuelve ---> [“You", "are", "looking", "beautiful"]
   //Escribe tu código aquí
   var array1= [];
-  for(var i=0; i<arr.length; i++){
-    for(var j=1; j<arr.length; i++){
-      if(arr[i].length===arr[j].length){
-        continue;
-      }
-      else if(arr[i].length<arr[j].length){
+  var cantidades = [];
+
+  for(var i=0; i<arr.length; i++){  
+    cantidades.push(arr[i].length);    
+  }
+  cantidades.sort();
+  for(var j=0; j<cantidades.length; j++){
+    for(var i=0; i<arr.length; i++){
+      if(cantidades[j]===arr[i].length){
         array1.push(arr[i]);
       }
     }
