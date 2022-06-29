@@ -69,7 +69,7 @@ function asAmirror(str) {
   var aux = "";
   for(var i=0; i<separada.length; i++){
     for(var j=0; j<separada[i].length; j++){
-      aux = separada[i].charAt(j)+aux;
+      aux = aux + separada[i].charAt(j);
     }
   }
   /*for(var i=unir.length-1; i>=0; i--){
