@@ -63,8 +63,10 @@ function asAmirror(str) {
   //Escribe tu código aquí
   var array = Array.from(str);
   var mirror = "";
+
   for(var i=0; i<array.length; i++){
-    mirror = mirror + reverse(array[i]);
+    var aux = reverse(array[i]);
+    mirror = mirror + aux;
   }
   return mirror;
 } 
