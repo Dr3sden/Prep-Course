@@ -71,7 +71,9 @@ function asAmirror(str) {
     for(var j=separada[i].length-1; j>=0; j--){
       aux = aux + separada[i].charAt(j);
     }
-    aux=aux + " ";
+    if(i!=separada.length-1){
+      aux=aux + " ";
+    }
   }
   /*for(var i=unir.length-1; i>=0; i--){
     aux = aux + unir.charAt(i);
