@@ -68,12 +68,14 @@ function asAmirror(str) {
   var unir = invertir.join("");
   var aux = "";
   for(var i=0; i<separada.length; i++){
-    invertir.push(separada[i].reverse());
+    for(var j=0; j<separada[i].length; j++){
+      aux = separada.charAt(j)+aux;
+    }
   }
   /*for(var i=unir.length-1; i>=0; i--){
     aux = aux + unir.charAt(i);
   }*/
-  return invertir;
+  return aux;
   //return str.split("").reverse().join("");
 } 
 
