@@ -62,13 +62,17 @@ function asAmirror(str) {
   //Ej: Recibe ---> "The Henry Challenge is close!" || Devuelve ---> "ehT yrneH egnellahC si !esolc"
   //Escribe tu código aquí
   var separada = str.split(" ")
-  var invertir = separada.reverse();
+  //var invertir = separada.reverse();
   //var aux = invertir.reverse();
+  var invertir = [];
   var unir = invertir.join("");
   var aux = "";
-  for(var i=unir.length-1; i>=0; i--){
-    aux = aux + unir.charAt(i);
+  for(var i=0; i<separada.length; i++){
+    invertir.push(separada[i].split().reverse());
   }
+  /*for(var i=unir.length-1; i>=0; i--){
+    aux = aux + unir.charAt(i);
+  }*/
   return invertir;
   //return str.split("").reverse().join("");
 } 
