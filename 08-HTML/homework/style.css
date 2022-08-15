@@ -1,0 +1,17 @@
+#h1color{
+    color:salmon;
+}
+img{
+    width: 400px;
+}
+#thirdDiv{
+    height: 600px;
+    width: 500px;
+    background: lightgreen;
+    padding: 50px;
+}
+#spanId{
+    font-size: 18px;
+    margin: 50px;
+    border: dashed red;
+}
